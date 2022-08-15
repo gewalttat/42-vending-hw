@@ -37,7 +37,7 @@ export const ControlPanel: FC<ControlPanelProps> = ({ products }) => {
       setInsertMessage('insert money');
       setSelectionMessage('/');
     }
-  }, [money])
+  }, [money, dispatch])
 
   const handleInsertCheck = (event: React.KeyboardEvent<HTMLInputElement>, value: number, arr: number[]): void => {
     event.preventDefault();
@@ -68,6 +68,7 @@ export const ControlPanel: FC<ControlPanelProps> = ({ products }) => {
       <form className={styles.controlPanel__insertDialog}>
         <label>{insertMessage}</label>
         <input value={insert}
+          disabled={!!selectedProduct?.name}
           placeholder='...'
           onChange={(event) => setInsert(Number(event.target.value))}
           onKeyDown={(event) => event.key === 'Enter' && handleInsertCheck(event, insert, acceptedValues)} />
