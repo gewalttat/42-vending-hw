@@ -26,6 +26,7 @@ export const ControlPanel: FC<ControlPanelProps> = ({ products }) => {
   useEffect(() => {
     if (money) {
       setInsertMessage(() => `Inserted money: ${money}₽`);
+      dispatch(filterByPrice(money));
       //min insert is 50, min price is 40, so it always be true with any success insert
       setAvailablePositions(() => true);
     } else {
@@ -42,7 +43,6 @@ export const ControlPanel: FC<ControlPanelProps> = ({ products }) => {
     event.preventDefault();
     if (arr.includes(value)) {
       dispatch(insertMoney(value));
-      dispatch(filterByPrice(value));
     } else {
       setInsertMessage(() => 'Money is not accepted');
     }

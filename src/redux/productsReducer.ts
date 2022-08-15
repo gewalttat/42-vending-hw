@@ -83,7 +83,6 @@ export const productsSlice = createSlice({
         },
         selectProduct: (state, action: PayloadAction<Product>) => {
             state.selectedProduct = action.payload
-            console.log(state.selectedProduct, 'sss')
         },
         countChange: (state) => {
             if (state.selectedProduct) {
