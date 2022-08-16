@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/42-vending-test/static/css/main.89140bd2.css",
-    "main.js": "/42-vending-test/static/js/main.e2a5c24e.js",
-    "index.html": "/42-vending-test/index.html",
-    "main.89140bd2.css.map": "/42-vending-test/static/css/main.89140bd2.css.map",
-    "main.e2a5c24e.js.map": "/42-vending-test/static/js/main.e2a5c24e.js.map"
+    "main.css": "/42-vending-hw/static/css/main.89140bd2.css",
+    "main.js": "/42-vending-hw/static/js/main.e2a5c24e.js",
+    "index.html": "/42-vending-hw/index.html",
+    "main.89140bd2.css.map": "/42-vending-hw/static/css/main.89140bd2.css.map",
+    "main.e2a5c24e.js.map": "/42-vending-hw/static/js/main.e2a5c24e.js.map"
   },
   "entrypoints": [
     "static/css/main.89140bd2.css",
